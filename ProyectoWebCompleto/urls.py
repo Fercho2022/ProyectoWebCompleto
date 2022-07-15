@@ -21,5 +21,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
 # Con la siguiente instrucción se enlaza la url del proyecto hacia la url de la aplicación, debe importarse include
     path('', include('ProyectoWebCompletoApp.urls') ),  
+    path('servicios/', include('Servicios.urls') ), 
    
 ]

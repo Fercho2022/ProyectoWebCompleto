@@ -1,4 +1,5 @@
 from django.shortcuts import render, HttpResponse
+from Servicios.models import Servicio        # importo la clase Servicio del models de la aplicación Servicios ya que necesito los objetos creados con el panel de administración
 
 # Create your views here.
 
@@ -7,14 +8,11 @@ def home(request):
     return render (request, "ProyectoWebCompletoApp/home.html")
 
 
-def servicios(request):
-
-    return render (request, "ProyectoWebCompletoApp/servicios.html")
 
 
 def tienda(request):
 
-    return render (request, "ProyectoWebCompletoApp/tienda.html")
+    return render (request, "ProyectoWebCompletoApp/tienda.html", )
 
 
 def blog(request):
